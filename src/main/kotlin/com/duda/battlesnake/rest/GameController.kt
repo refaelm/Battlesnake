@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 class GameController(val gameService: GameService) {
 
     @GetMapping("/")
-    fun getSnakeConfig() = SnakeConfig("1", "Liat Grinshpun")
+    fun getSnakeConfig() = SnakeConfig("1", "Refael Mizrahi")
 
     @PostMapping("/start")
     fun startGame(@RequestBody state: GameState) {
